@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    padding: 10px 20px;
+    font-style: normal;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    padding-bottom: 10px;
+}
+
+article {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+.form-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    width: 50%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+label {
+    line-height: 2.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    color: #011C34;
+}
+
+/* input {
+    border: 0;
+} */
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="level"],
+.form-row input[type="date"] {
+    /* width: 100%; */
+    /* border: 0; */
+    border: white;
+    width: 238px;
+    padding: 15px;
+    /* margin-bottom: 20px; */
+    /* font-size: 16px; */
+    border-radius: 4px;
+}
+
+input {
+    outline: unset;
+}
+
+.form-row input[type="level"],
+.form-row input[type="password"],
+button {
+    width: 500px;
+    /* border: 0; */
+}
+
+.input-gender,
+.input-date,
+.input-level,
+.input-password {
+    position: relative;
+}
+
+.input-gender img,
+.input-date img,
+.input-level img,
+.input-password img {
+    position: absolute;
+    top: 51px;
+    /* left: 0px; */
+    /* bottom: 25px; */
+    right: 15px;
+}
+
+input:hover {
+    /* background-color: black; */
+    outline: 1px solid #2EC4B6;
+    /* cursor: pointer; */
+}
+
+.form-name input[placeholder="Tolu"] {
+    font-weight: bolder;
+    color: #011C34;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 14px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 4px;
+    border: 0;
+    outline: unset;
+    background-color: #2EC4B6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.form-policy {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 0px;
+    width: 500px;
+    font-weight: bold;
+}
+
+.form-policy a {
+    text-decoration: underline;
+    color: #2EC4B6;
+}
+
+@media (max-width: 1500px) and (min-width: 400px) {
+    .show-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .show-desktop {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .input-firstName {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    main {
+        align-items: unset;
+    }
+    form {
+        width: 100%;
+    }
+    .form-row {
+        display: block;
+    }
+    button, .form-policy {
+        width: 100%;
+    }
+    .form-row input[type="level"], .form-row input[type="password"], button, .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row input[type="password"],
+    .form-row input[type="level"],
+    .form-row input[type="date"] {
+        width: 100%;
+    }
+}
